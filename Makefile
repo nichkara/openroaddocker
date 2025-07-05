@@ -5,7 +5,7 @@ LABEL		=	latest
 
 .PHONY: build
 build:
-	$(PROVIDER) build -t $(UNAME)/$(IMAGE):$(LABEL) .
+	$(PROVIDER) build --no-cache -t $(UNAME)/$(IMAGE):$(LABEL) .
 
 .PHONY: run
 run:
